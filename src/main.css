@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .bg-search {
+    background-image: url('@/assets/icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: 12px center;
+  }
+
+  .bg-ethereum {
+    background-image: url('@/assets/icons/ethereum.svg');
+    background-repeat: no-repeat;
+    background-position: 12px center;
+  }
+}

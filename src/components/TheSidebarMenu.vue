@@ -13,25 +13,25 @@
           flex justify-center items-center
           border-2 border-blue
         ">
-        <img src="@/assets/logo.svg" alt="logo-icon" />
+        <img src="@/assets/icons/logo.svg" alt="logo-icon" />
       </div>
     </div>
 
     <div>
       <a href="#" class="list-item bg-white/10 border-l-4">
-        <img src="@/assets/discover.svg" alt="discover-icon">
+        <img src="@/assets/icons/discover.svg" alt="discover-icon">
       </a>
       <a href="#" class="list-item list-item-hover">
-        <img src="@/assets/transfer.svg" alt="transfer-icon">
+        <img src="@/assets/icons/transfer.svg" alt="transfer-icon">
       </a>
       <a href="#" class="list-item list-item-hover">
-        <img src="@/assets/note.svg" alt="note-icon">
+        <img src="@/assets/icons/note.svg" alt="note-icon">
       </a>
       <a href="#" class="list-item list-item-hover">
-        <img src="@/assets/setting.svg" alt="setting-icon">
+        <img src="@/assets/icons/setting.svg" alt="setting-icon">
       </a>
       <a href="#" class="list-item list-item-hover">
-        <img src="@/assets/bookmark.svg" alt="bookmark-icon">
+        <img src="@/assets/icons/bookmark.svg" alt="bookmark-icon">
       </a>
     </div>
   </aside>

@@ -6,7 +6,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '20px'
+        DEFAULT: '1.25rem',
       }
     },
     extend: {
@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         base: {
+          secondary: '#C4C4C4',
           DEFAULT: '#262D3A',
           dark: '#1B1E2A',
         },
@@ -25,6 +26,11 @@ module.exports = {
           DEFAULT: '#B84EF1',
         },
       },
+      borderRadius: {
+        8: '8px',
+        12: '12px',
+        20: '20px'
+      }
     },
   },
   variants: {
