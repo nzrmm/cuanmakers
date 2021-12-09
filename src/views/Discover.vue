@@ -1,16 +1,21 @@
 <template>
-  <main>
-    <TheSidebar />
-  </main>
+  <div class="flex">
+    <TheSidebarMenu />
+    <main class="container text-white">
+      <TheNavbar />
+    </main>
+  </div>
 </template>
 
 <script>
-import TheSidebar from '@/components/TheSidebar.vue';
+import TheSidebarMenu from '@/components/TheSidebarMenu.vue';
+import TheNavbar from '@/components/TheNavbar.vue';
 
 export default {
   name: 'Discover',
   components: {
-    TheSidebar,
+    TheSidebarMenu,
+    TheNavbar
   },
 };
 </script>
