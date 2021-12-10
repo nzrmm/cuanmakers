@@ -1,21 +1,28 @@
 <template>
   <div class="flex">
     <TheSidebarMenu />
-    <main class="container text-white">
+
+    <div class="w-11/12 container">
       <TheNavbar />
-    </main>
+
+      <div>
+      <TheMain />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import TheSidebarMenu from '@/components/TheSidebarMenu.vue';
-import TheNavbar from '@/components/TheNavbar.vue';
+import TheSidebarMenu from '@/components/templates/TheSidebarMenu.vue';
+import TheNavbar from '@/components/templates/TheNavbar.vue';
+import TheMain from '@/components/templates/TheMain.vue';
 
 export default {
   name: 'Discover',
   components: {
     TheSidebarMenu,
-    TheNavbar
+    TheNavbar,
+    TheMain
   },
 };
 </script>

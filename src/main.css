@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* 
+  - Light : 300
+  - Reguler : 400
+  - Medium : 500
+  - Semibold : 600
+  - Bold : 700
+*/
 
 @tailwind base;
 @tailwind components;
@@ -15,5 +22,11 @@
     background-image: url('@/assets/icons/ethereum.svg');
     background-repeat: no-repeat;
     background-position: 12px center;
+  }
+
+  .bg-illustration {
+    background-image: url('@/assets/illustrations/illustration-1.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
 }
