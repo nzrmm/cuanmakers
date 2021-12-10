@@ -1,0 +1,75 @@
+<template>
+  <div class="w-4/12 px-3 py-3">
+    <div class="bg-base rounded-12 p-3">
+      <div class="mb-4 relative">
+        <img :src="`./src/assets/images/${src}`" class="w-full" :alt="alt">
+        
+        <button class="absolute top-3 left-3 px-3 py-1 rounded-12 bg-base-secondary/20">
+          <span class="font-medium">{{ category }}</span>
+        </button>
+        <button class="absolute top-3 right-3 w-[40px] h-[40px] rounded-full bg-base-secondary/20">
+          <div class="flex justify-center items-center">
+            <img src="@/assets/icons/love.svg" alt="love-icon">
+          </div>
+        </button>
+
+        <div class="absolute py-1 bottom-0 w-full text-sm bg-base/80 text-center">
+          Ends in : {{ timer }}
+        </div>
+      </div>
+      <div>
+        <div class="mb-4 flex justify-between">
+          <p class="text-sm">Current Bid:</p>
+          <p class="text-sm text-blue">{{ curBid }} ETH</p>
+        </div>
+        <div class="mb-4 text-lg font-medium">
+          {{ title }}
+        </div>
+      </div>
+
+      <div class="pt-4 pb-2 border-t border-white/10 flex -space-x-2">
+        <div class="w-[36px] h-[36px] rounded-full flex justify-center items-center">
+          <img src="@/assets/people/people-2.png" alt="">
+        </div>
+        <div class="w-[36px] h-[36px] rounded-full flex justify-center items-center">
+          <img src="@/assets/people/people-3.png" alt="">
+        </div>
+        <div class="w-[36px] h-[36px] rounded-full flex justify-center items-center">
+          <img src="@/assets/people/people-4.png" alt="">
+        </div>
+        <div class="w-[36px] h-[36px] rounded-full flex justify-center items-center">
+          <img src="@/assets/people/people-6.png" alt="">
+        </div>
+        <div class="w-[36px] h-[36px] rounded-full bg-blue flex justify-center items-center">
+          <span class="text-xs">100+</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    props: {
+      src: {
+        type: String,
+      },
+      alt: {
+        type: String,
+      },
+      category: {
+        type: String,
+      },
+      timer: {
+        type: String
+      },
+      curBid: {
+        type: Number,
+      },
+      title: {
+        type: String,
+      }
+    }
+  }
+</script>
