@@ -6,7 +6,7 @@
       <TheNavbar />
 
       <div>
-      <TheMain />
+        <TheMain />
       </div>
     </div>
   </div>

@@ -6,7 +6,7 @@
       
         <!-- Search Bar -->
         <div class="w-9/12">
-          <input type="text" class="w-full h-[56px] pl-12 rounded-12 bg-base focus:ring-2 ring-white/10 outline-none transition-all placeholder-white bg-search" placeholder="Search">
+          <input type="text" class="w-full h-[56px] text-sm pl-12 rounded-12 bg-base focus:ring-2 ring-white/10 outline-none transition-all placeholder-white bg-search" placeholder="Search">
         </div>
 
         <!-- Ethereum Bar -->

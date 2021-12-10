@@ -1,32 +1,16 @@
 <template>
   <main class="w-9/12 text-white">
-    <div class="bg-gradient-to-br from-blue to-purple rounded-20 overflow-hidden">
-
-      <!-- Content Hero -->
-      <div class="h-[320px] px-10 flex flex-col justify-center bg-illustration">
-        <h1 class="text-[40px] font-semibold mb-4">One Stop NFT Marketplace</h1>
-        <div class="mb-6">
-          <p class="text-lg ">Discover limited-edition digital artwork</p>
-          <p class="text-lg ">Create, Sell, and Collect yours now!</p>
-        </div>
-
-        <div class="flex space-x-4">
-          <ButtonHero>Start Create</ButtonHero>
-          <ButtonHero>How It Work</ButtonHero>
-        </div>
-        
-      </div>
-    </div>
+    <BaseHero />
   </main>
 </template>
 
 <script>
-  import ButtonHero from '@/components/atoms/ButtonHero.vue';
+  import BaseHero from '@/components/base/BaseHero.vue';
 
   export default {
     name: 'TheMain',
     components: {
-      ButtonHero
+      BaseHero
     }
   }
 </script>
