@@ -19,9 +19,9 @@
 
       <!-- Notification and Profile Bar -->
       <div class="w-3/12 flex justify-end items-center gap-3">
-        <NavbarNotification src="message.svg" alt="message-icon"/>
-        <NavbarNotification src="notification.svg" alt="notification-icon"/>
-        <NavbarProfile />
+        <Notification src="message.svg" alt="message-icon"/>
+        <Notification src="notification.svg" alt="notification-icon"/>
+        <BaseNavbarProfile />
       </div>
 
     </div>

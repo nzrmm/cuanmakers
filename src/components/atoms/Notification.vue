@@ -1,7 +1,9 @@
 <template>
-  <div class="nav-item">
+
+  <!-- Notification for this web, used in Navbar -->
+  <button class="w-[40px] h-[40px] rounded-full bg-base-secondary/20 flex justify-center items-center">
     <img :src="`./src/assets/icons/${src}`" :alt="alt">
-  </div>
+  </button>
 </template>
 
 <script>
@@ -17,12 +19,3 @@
     }
   }
 </script>
-
-<style scoped>
-  .nav-item {
-    @apply 
-      w-[40px] h-[40px]
-      rounded-full bg-base-secondary/20
-      flex justify-center items-center
-  }
-</style>

@@ -1,11 +1,20 @@
 <template>
-  <div class="w-[36px] h-[36px] rounded-full flex justify-center items-center">
-    <img src="@/assets/people/people-2.png" alt="">
+
+  <!-- Profile for this web, used in card, navbar -->
+  <div class="rounded-full">
+    <img :src="`./src/assets/profiles/${src}`" :alt="alt">
   </div>
 </template>
 
 <script>
-  export default {
-    
+export default {
+  props: {
+    src: {
+      type: String
+    },
+    alt: {
+      type: String
+    }
   }
+}
 </script>
