@@ -22,20 +22,3 @@
     </div>
   </div>
 </template>
-
-<script>
-  import ExploreButton from '@/components/atoms/ExploreButton.vue';
-  import BaseCard from '@/components/base/BaseCard.vue';
-
-  export default {
-    name: 'BaseContent',
-    components: {
-      ExploreButton,
-      BaseCard
-    }
-  }
-</script>
-
-<style lang="scss" scoped>
-
-</style>

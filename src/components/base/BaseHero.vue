@@ -15,14 +15,3 @@
     </div>
   </div>
 </template>
-
-<script>
-  import HeroButton from '@/components/atoms/HeroButton.vue';
-
-  export default {
-    name: 'TheMain',
-    components: {
-      HeroButton
-    }
-  }
-</script>

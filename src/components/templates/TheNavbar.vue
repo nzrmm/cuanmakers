@@ -27,16 +27,3 @@
     </div>
   </nav>
 </template>
-
-<script>
-import NavbarNotification from '@/components/atoms/NavbarNotification.vue';
-import NavbarProfile from '@/components/atoms/NavbarProfile.vue';
-
-export default {
-  name: 'TheNavbar',
-  components: {
-    NavbarNotification,
-    NavbarProfile
-  }
-}
-</script>

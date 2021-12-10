@@ -14,16 +14,3 @@
     </div>
   </aside>
 </template>
-
-<script>
-import Logo from '@/components/atoms/Logo.vue';
-import SidebarLink from '@/components/atoms/SidebarLink.vue';
-
-export default {
-  name: 'TheSidebarMenu',
-  components: {
-    Logo,
-    SidebarLink
-  }
-}
-</script>
