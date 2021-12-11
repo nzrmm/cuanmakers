@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-3 px-3 py-4 bg-gradient-to-r from-blue/10 to-purple/10 rounded-12">
+  <div class="mb-3 px-3 py-4 bg-white/5 rounded-12 ">
     <div class="flex items-center space-x-2">
       <Profile :src="src" :alt="alt" />
       <div>
