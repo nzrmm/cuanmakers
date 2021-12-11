@@ -7,10 +7,10 @@
     <!-- Link sidebar menu -->
     <div>
       <LinkSidebarMenu to="Discover" src="discover.svg" alt="discover-icon" />
-      <LinkSidebarMenu to="Transfer" src="transfer.svg" alt="transfer-icon" />
-      <LinkSidebarMenu to="Transfer" src="note.svg" alt="note-icon" />
-      <LinkSidebarMenu to="Transfer" src="setting.svg" alt="setting-icon" />
-      <LinkSidebarMenu to="Transfer" src="bookmark.svg" alt="bookmark-icon" />
+      <LinkSidebarMenu to="Maintenance" src="transfer.svg" alt="transfer-icon" />
+      <LinkSidebarMenu to="Maintenance" src="note.svg" alt="note-icon" />
+      <LinkSidebarMenu to="Maintenance" src="setting.svg" alt="setting-icon" />
+      <LinkSidebarMenu to="Maintenance" src="bookmark.svg" alt="bookmark-icon" />
     </div>
   </aside>
 </template>

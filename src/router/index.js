@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Discover from '@/views/Discover.vue';
-import Transfer from '@/views/Transfer.vue';
+import Maintenance from '@/views/Maintenance.vue';
+import NotFound from '@/views/404.vue';
 
 const routes = [
   {
@@ -9,9 +10,13 @@ const routes = [
     component: Discover,
   },
   {
-    path: '/transfer',
-    name: 'Transfer',
-    component: Transfer,
+    path: '/maintenance',
+    name: 'Maintenance',
+    component: Maintenance,
+  },
+  {
+    path: "/:catchAll(.*)",
+    component: NotFound,
   },
 ];
 
