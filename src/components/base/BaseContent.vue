@@ -4,11 +4,7 @@
 
     <!-- Link content menu -->
     <div class="mb-4 flex space-x-4 overflow-x-auto">
-      <button class="px-6 py-3 rounded-20 bg-white/30 border-2 border-purple/50">
-        <span class="text-sm lg:text-[1rem]">
-          LiveAction
-        </span>  
-      </button>
+      <LinkContent>LiveAction</LinkContent>
       <LinkContent>Art</LinkContent>
       <LinkContent>Photography</LinkContent>
       <LinkContent>Games</LinkContent>

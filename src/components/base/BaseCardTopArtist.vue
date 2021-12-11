@@ -2,7 +2,7 @@
   <div class="mb-5 flex justify-between items-center">
 
     <div class="flex items-center">
-      <p class="font-semibold text-xl mr-2">{{ rank }}.</p>
+      <p class="w-8 font-semibold text-xl">{{ rank }}.</p>
       <BaseCardTopArtistProfile :src="src" :alt="alt" :name="name" :username="username" />
     </div>
 

@@ -5,11 +5,28 @@
 
       <!-- Card Top Artist -->
       <div>
-        <BaseCardTopArtist :rank="1" src="profile-1-40.png" alt="profile-1-40" name="Broklyn Sims" username="@brosim" />
-        <BaseCardTopArtist :rank="2" src="profile-2-40.png" alt="profile-1-40" name="Jenny Wilson" username="@jennie" />
-        <BaseCardTopArtist :rank="3" src="profile-3-40.png" alt="profile-1-40" name="Theresa Webb" username="@theresa" />
-        <BaseCardTopArtist :rank="4" src="profile-4-40.png" alt="profile-1-40" name="Courtney Henry" username="@courtney" />
+        <template v-for="(topArtist, index) in topArtists" :key="topArtist.id">
+          <BaseCardTopArtist :rank="index + 1" src="profile-1-40.png" alt="profile-1-40" :name="topArtist.name" :username="topArtist.username" />
+        </template>
       </div>
 
     </div>
 </template>
+
+<script>
+import { computed } from 'vue'
+import { useStore } from 'vuex';
+export default {
+  setup() {
+    const store = useStore();
+
+    const topArtists = computed(() => {
+      return store.state.topArtists;
+    })
+
+    return {
+      topArtists
+    }
+  }
+}
+</script>
