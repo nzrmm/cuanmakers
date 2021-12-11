@@ -3,8 +3,8 @@
     <div class="flex items-center space-x-2">
       <Profile :src="src" :alt="alt" />
       <div>
-        <h4 class="mb-1 font-medium text-sm">{{ title }}</h4>
-        <p class="text-xs text-base-secondary/50">{{ description }}</p>
+        <h4 class="mb-1 font-medium text-sm">{{ name }}</h4>
+        <p class="text-xs text-base-secondary/50">{{ message }}</p>
       </div>
     </div>
   </div>
@@ -19,10 +19,10 @@ export default {
     alt: {
       type: String
     },
-    title: {
+    name: {
       type: String
     },
-    description: {
+    message: {
       type: String
     }
   }

@@ -22,7 +22,8 @@ export default {
     const store = useStore();
 
     onMounted(() => {
-      store.dispatch('getTopArtists')
+      store.dispatch('getTopArtists');
+      store.dispatch('getRecentActivities');
     })
   }
 };
