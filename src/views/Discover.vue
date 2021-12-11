@@ -1,11 +1,11 @@
 <template>
-  <div class="flex">
+  <div class="block lg:flex">
     <TheSidebarMenu />
 
-    <div class="w-11/12 container">
+    <div class="pb-12 w-full xl:w-11/12 container">
       <TheNavbar />
 
-      <div class="flex space-x-5">
+      <div class="block lg:flex lg:space-x-5">
         <TheMain />
         <TheSidebarMain />
       </div>

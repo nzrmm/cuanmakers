@@ -1,10 +1,10 @@
 <template>
-  <div class="mb-12">
-    <h1 class="mb-3 font-semibold text-xl">Explore</h1>
+  <div class="mb-10 lg:mb-0">
+    <h1 class="mb-3 font-semibold lg:text-xl">Explore</h1>
 
     <!-- Link content menu -->
-    <div class="mb-4 flex space-x-4">
-      <LinkContent>Live Action</LinkContent>
+    <div class="mb-4 flex  space-x-4 overflow-x-auto">
+      <LinkContent>LiveAction</LinkContent>
       <LinkContent>Art</LinkContent>
       <LinkContent>Photography</LinkContent>
       <LinkContent>Games</LinkContent>

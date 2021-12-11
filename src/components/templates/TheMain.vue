@@ -1,5 +1,5 @@
 <template>
-  <main class="w-9/12 text-white">
+  <main class="w-full lg:w-9/12 text-white">
     <BaseHero />
     <BaseContent />
   </main>

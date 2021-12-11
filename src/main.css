@@ -33,15 +33,17 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 0px;
 }
 
+::-webkit-scrollbar:horizontal {
+  height: 0;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   border-radius: 100vh;
   background: #edf2f7;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 100vh;

@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-1/12 min-h-screen bg-base">
+  <aside class="hidden xl:block w-1/12 min-h-screen bg-base">
 
     <!-- Logo Menu -->
     <Logo />

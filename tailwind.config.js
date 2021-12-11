@@ -6,7 +6,8 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1.25rem',
+        DEFAULT: '1rem',
+        xl: '1.25rem'
       }
     },
     extend: {
@@ -27,6 +28,7 @@ module.exports = {
         },
       },
       borderRadius: {
+        4: '4px',
         8: '8px',
         12: '12px',
         20: '20px'

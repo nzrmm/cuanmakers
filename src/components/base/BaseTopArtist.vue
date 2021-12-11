@@ -1,6 +1,6 @@
 <template>
    <!-- Top Artist -->
-    <div class="mb-8 h-[320px] bg-base text-white rounded-20 p-5">
+    <div class="mb-8 h-[320px] bg-base text-white rounded-20 p-5 overflow-auto">
       <h1 class="mb-5 font-semibold text-xl">Top Artist</h1>
 
       <!-- Card Top Artist -->
