@@ -5,8 +5,9 @@
     <div class="w-11/12 container">
       <TheNavbar />
 
-      <div>
+      <div class="flex space-x-5">
         <TheMain />
+        <TheSidebarMain />
       </div>
     </div>
   </div>

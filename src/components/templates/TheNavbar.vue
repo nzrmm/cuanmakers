@@ -1,8 +1,8 @@
 <template>
   <nav class="mb-[16px] w-full text-white">
-    <div class="h-[90px] flex items-center">
+    <div class="h-[90px] flex items-center space-x-5">
 
-      <div class="w-9/12 flex items-center gap-5">
+      <div class="w-9/12 flex items-center space-x-5">
       
         <!-- Search Bar -->
         <div class="w-9/12">
@@ -18,9 +18,11 @@
       </div>
 
       <!-- Notification and Profile Bar -->
-      <div class="w-3/12 flex justify-end items-center gap-3">
-        <Notification src="message.svg" alt="message-icon"/>
-        <Notification src="notification.svg" alt="notification-icon"/>
+      <div class="w-3/12 flex justify-between items-center">
+        <div class="flex space-x-3">
+          <Notification src="message.svg" alt="message-icon"/>
+          <Notification src="notification.svg" alt="notification-icon"/>
+        </div>
         <BaseNavbarProfile />
       </div>
 
