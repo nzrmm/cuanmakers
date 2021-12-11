@@ -15,7 +15,7 @@
           </div>
         </button>
         <div class="absolute py-1 bottom-0 w-full text-sm bg-base/80 text-center">
-          Ends in : {{ timer }}
+          Ends in : 32h : 23m : 12s
         </div>
       </div>
       <!-- End Card Header -->
@@ -24,10 +24,10 @@
       <div>
         <div class="mb-4 flex justify-between">
           <p class="text-sm">Current Bid:</p>
-          <p class="text-sm text-blue">{{ curBid }} ETH</p>
+          <p class="text-sm text-blue">{{ currentBid }} ETH</p>
         </div>
         <div class="mb-4 text-lg font-medium">
-          {{ title }}
+          {{ name }}
         </div>
       </div>
       <!-- End Card Body -->
@@ -62,14 +62,14 @@
         type: String,
       },
       timer: {
-        type: String
+        type: Array
       },
-      curBid: {
-        type: Number,
+      currentBid: {
+        type: String,
       },
-      title: {
+      name: {
         type: String,
       }
-    }
+    },
   }
 </script>

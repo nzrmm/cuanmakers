@@ -1,9 +1,12 @@
 <template>
   <nav class="mb-[16px] w-full text-white">
-    <div class="h-[90px] flex items-center space-x-5">
+    <div class="h-[90px] flex items-center space-x-5 xl:-ml-5">
 
       <div class="w-6/12 lg:w-9/12 flex items-center space-x-5">
-      
+
+        <!-- Hamburger Menu -->
+        <img src="@/assets/icons/hamburger.svg" class="block xl:hidden" alt="hamburger-icon">
+
         <!-- Search Bar -->
         <div class="w-full lg:w-9/12">
           <input type="text" class="w-full h-[40px] lg:h-[56px] text-sm pl-12 pr-4 rounded-12 bg-base focus:ring-2 ring-white/10 outline-none transition-all placeholder-white bg-search" placeholder="Search">
