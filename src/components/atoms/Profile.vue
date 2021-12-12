@@ -2,7 +2,7 @@
 
   <!-- Profile for this web, used in card, navbar -->
   <div class="rounded-full">
-    <img :src="`./src/assets/profiles/${src}`" :alt="alt">
+    <img :src="`/profiles/${src}`" :alt="alt">
   </div>
 </template>
 

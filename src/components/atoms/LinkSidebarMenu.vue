@@ -2,7 +2,7 @@
 
   <!-- Link button for sidebar menu -->
   <router-link :to="{name: to}" class="list-item list-item-hover">
-    <img :src="`./src/assets/icons/${src}`" :alt="alt">
+    <img :src="`/icons/${src}`" :alt="alt">
   </router-link>
 </template>
 

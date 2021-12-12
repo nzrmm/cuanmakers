@@ -5,7 +5,7 @@
       <div class="w-6/12 lg:w-9/12 flex items-center space-x-5">
 
         <!-- Hamburger Menu -->
-        <img src="@/assets/icons/hamburger.svg" class="block xl:hidden" alt="hamburger-icon">
+        <img src="/icons/hamburger.svg" class="block xl:hidden" alt="hamburger-icon">
 
         <!-- Search Bar -->
         <div class="w-full lg:w-9/12">

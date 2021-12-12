@@ -13,19 +13,19 @@
 
 @layer utilities {
   .bg-search {
-    background-image: url('@/assets/icons/search.svg');
+    background-image: url('/icons/search.svg');
     background-repeat: no-repeat;
     background-position: 12px center;
   }
 
   .bg-ethereum {
-    background-image: url('@/assets/icons/ethereum.svg');
+    background-image: url('/icons/ethereum.svg');
     background-repeat: no-repeat;
     background-position: 12px center;
   }
 
   .bg-illustration {
-    background-image: url('@/assets/illustrations/illustration-1.svg');
+    background-image: url('/illustrations/illustration-1.svg');
     background-repeat: no-repeat;
     background-position: right bottom;
   }

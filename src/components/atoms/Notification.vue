@@ -2,7 +2,7 @@
 
   <!-- Notification for this web, used in Navbar -->
   <button class="w-[40px] h-[40px] rounded-full bg-base-secondary/20 flex justify-center items-center">
-    <img :src="`./src/assets/icons/${src}`" :alt="alt">
+    <img :src="`/icons/${src}`" :alt="alt">
   </button>
 </template>
 

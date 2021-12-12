@@ -4,14 +4,14 @@
 
       <!-- Card Header -->
       <div class="mb-4 relative">
-        <img :src="`./src/assets/images/${src}`" class="w-full" :alt="alt">  
+        <img :src="`/images/${src}`" class="w-full" :alt="alt">  
 
         <button class="absolute top-3 left-3 px-3 py-1 rounded-12 bg-base-secondary/20">
           <span class="font-medium">{{ category }}</span>
         </button>
         <button class="absolute top-3 right-3 w-[40px] h-[40px] rounded-full bg-base-secondary/20">
           <div class="flex justify-center items-center">
-            <img src="@/assets/icons/love.svg" alt="love-icon">
+            <img src="/icons/love.svg" alt="love-icon">
           </div>
         </button>
         <div class="absolute py-1 bottom-0 w-full text-sm bg-base/80 text-center">
