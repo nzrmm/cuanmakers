@@ -25,17 +25,26 @@ const store = createStore({
         .then(response => {
           commit('getFeaturedArtworks', response.data)
         })
+        .catch(error => {
+          console.log(error);
+        })
     },
     getTopArtists({ commit }) {
       axios.get(`${baseApi}${topArtists}`)
         .then(response => {
           commit('getTopArtists', response.data)
         })
+        .catch(error => {
+          console.log(error);
+        })
     },
     getRecentActivities({ commit }) {
       axios.get(`${baseApi}${recentActivities}`)
         .then(response => {
           commit('getRecentActivities', response.data)
+        })
+        .catch(error => {
+          console.log(error);
         })
     }
   }
