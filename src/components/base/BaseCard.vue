@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[290px] lg:w-4/12 px-3 py-3">
+  <div class="z-10 w-[290px] lg:w-4/12 px-3 py-3">
     <div class="bg-base rounded-12 p-3">
 
       <!-- Card Header -->
