@@ -4,7 +4,7 @@
 
       <!-- Card Header -->
       <div class="mb-4 relative">
-        <img :src="`/images/${src}`" class="w-full" :alt="alt">  
+        <img src="/images/images-1.webp" class="w-full h-40" alt="image-card">  
 
         <button class="absolute top-3 left-3 px-3 py-1 rounded-12 bg-base-secondary/20">
           <span class="font-medium">{{ category }}</span>
@@ -34,11 +34,11 @@
 
       <!-- Card Footer -->
       <div class="pt-4 pb-2 border-t border-white/10 flex -space-x-2">
-        <Profile src="profile-1-36.png" alt="profile-1-36" />
-        <Profile src="profile-2-36.png" alt="profile-2-36" />
-        <Profile src="profile-3-36.png" alt="profile-3-36" />
-        <Profile src="profile-4-36.png" alt="profile-4-36" />
-        <Profile src="profile-5-36.png" alt="profile-5-36" />
+        <Profile src="profile-1-36.webp" alt="profile-card" />
+        <Profile src="profile-2-36.webp" alt="profile-card" />
+        <Profile src="profile-3-36.webp" alt="profile-card" />
+        <Profile src="profile-4-36.webp" alt="profile-card" />
+        <Profile src="profile-5-36.webp" alt="profile-card" />
         <div class="w-[36px] h-[36px] rounded-full bg-blue flex justify-center items-center">
           <span class="text-xs">100+</span>
         </div>
@@ -52,12 +52,6 @@
 <script>
   export default {
     props: {
-      src: {
-        type: String,
-      },
-      alt: {
-        type: String,
-      },
       category: {
         type: String,
       },

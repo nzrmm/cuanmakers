@@ -6,7 +6,7 @@
       <!-- Card Top Artist -->
       <div>
         <template v-for="(topArtist, index) in topArtists" :key="topArtist.id">
-          <BaseCardTopArtist :rank="index + 1" src="profile-1-40.png" alt="profile-1-40" :name="topArtist.name" :username="topArtist.username" />
+          <BaseCardTopArtist :rank="index + 1" src="profile-1-40.webp" alt="profile-1-40" :name="topArtist.name" :username="topArtist.username" />
         </template>
       </div>
 

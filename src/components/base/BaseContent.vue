@@ -16,9 +16,7 @@
     <div class="overflow-x-auto lg:overflow-x-hidden">
       <div class="inline-flex lg:flex-wrap -mx-3">
 
-        <template v-for="artwork in featuredArtworks" :key="artwork.id">
-            <BaseCard src="images-1.png" alt="images-1" category="Art" :timer="[artwork.bid_starts, artwork.bid_ends]" :currentBid="artwork.currentBid" :name="artwork.name"/>
-        </template>
+        <BaseCard v-for="artwork in featuredArtworks" :key="artwork.id" category="Art" v-bind="cardContent(artwork)"/>
       
       </div>
     </div>
@@ -38,8 +36,16 @@ export default {
       return store.state.featuredArtworks
     })
 
+    const cardContent = (artwork) => {
+      return {
+        timer: [artwork.bid_starts, artwork.bid_ends],
+        currentBid: artwork.currentBid,
+        name: artwork.name
+      }
+    }
+
     return {
-      featuredArtworks
+      featuredArtworks, cardContent
     }
   }
 }

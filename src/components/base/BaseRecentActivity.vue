@@ -3,11 +3,7 @@
     <h1 class="mb-5 font-semibold text-xl">Recent Activity</h1>
 
     <!-- Card Recent Activity -->
-    <div>
-      <template v-for="recentActivity in recentActivities" :key="recentActivity.id">
-        <BaseCardRecentActivity src="recent-2.png" alt="recent-1" :name="recentActivity.name" :message="recentActivity.message" />
-      </template>
-    </div>
+    <BaseCardRecentActivity v-for="{id, name, message} in recentActivities" :key="id" :name="name" :message="message" />
   </div>
 </template>
 
