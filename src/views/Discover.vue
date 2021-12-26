@@ -22,7 +22,7 @@ export default {
     const store = useStore();
 
     onMounted(() => {
-      store.dispatch('getFeaturedArtworks');
+      store.dispatch('getArtworks');
       store.dispatch('getTopArtists');
       store.dispatch('getRecentActivities');
     })

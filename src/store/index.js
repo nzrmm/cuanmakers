@@ -1,6 +1,5 @@
 import { createStore } from 'vuex';
-import axios from 'axios';
-import { baseApi, featuredArtworks, topArtists, recentActivities } from '@/constant/api';
+import { getArtworks, getTopArtist, getRecentActivities } from '@/services/ApiServices';
 
 const store = createStore({
   state: {
@@ -9,39 +8,39 @@ const store = createStore({
     recentActivities: []
   },
   mutations: {
-    getFeaturedArtworks(state, data) {
+    GET_ARTWORKS(state, data) {
       state.featuredArtworks = data;
     },
-    getTopArtists(state, data) {
+    GET_TOP_ARTIST(state, data) {
       state.topArtists = data;
     },
-    getRecentActivities(state, data) {
+    GET_RECENT_ACTIVITIES(state, data) {
       state.recentActivities = data;
     }
   },
   actions: {
-    getFeaturedArtworks({ commit }) {
-      axios.get(`${baseApi}${featuredArtworks}`)
+    getArtworks({ commit }) {
+      getArtworks()
         .then(response => {
-          commit('getFeaturedArtworks', response.data)
+          commit('GET_ARTWORKS', response.data)
         })
         .catch(error => {
           console.log(error);
         })
     },
     getTopArtists({ commit }) {
-      axios.get(`${baseApi}${topArtists}`)
+      getTopArtist()
         .then(response => {
-          commit('getTopArtists', response.data)
+          commit('GET_TOP_ARTIST', response.data)
         })
         .catch(error => {
           console.log(error);
         })
     },
     getRecentActivities({ commit }) {
-      axios.get(`${baseApi}${recentActivities}`)
+      getRecentActivities()
         .then(response => {
-          commit('getRecentActivities', response.data)
+          commit('GET_RECENT_ACTIVITIES', response.data)
         })
         .catch(error => {
           console.log(error);
