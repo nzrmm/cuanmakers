@@ -6,7 +6,7 @@
       <BaseCardTopArtistProfile :src="src" :alt="alt" :name="name" :username="username" />
     </div>
 
-    <LinkCardTopArtist />
+    <ButtonSm color="bg-gradient-to-br from-blue to-purple">Follow</ButtonSm>
   </div>
 </template>
 

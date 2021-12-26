@@ -5,9 +5,13 @@ const store = createStore({
   state: {
     featuredArtworks: [],
     topArtists: [],
-    recentActivities: []
+    recentActivities: [],
+    showSidebar: false
   },
   mutations: {
+    TOGGLE_SIDEBAR(state) {
+      state.showSidebar = !state.showSidebar
+    },
     GET_ARTWORKS(state, data) {
       state.featuredArtworks = data;
     },

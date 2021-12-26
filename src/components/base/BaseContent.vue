@@ -4,12 +4,12 @@
 
     <!-- Link content menu -->
     <div class="mb-4 flex space-x-4 overflow-x-auto">
-      <LinkContent>LiveAction</LinkContent>
-      <LinkContent>Art</LinkContent>
-      <LinkContent>Photography</LinkContent>
-      <LinkContent>Games</LinkContent>
-      <LinkContent>Music</LinkContent>
-      <LinkContent>Utility</LinkContent>
+      <ButtonExplore>LiveAction</ButtonExplore>
+      <ButtonExplore>Art</ButtonExplore>
+      <ButtonExplore>Photography</ButtonExplore>
+      <ButtonExplore>Games</ButtonExplore>
+      <ButtonExplore>Music</ButtonExplore>
+      <ButtonExplore>Utility</ButtonExplore>
     </div>
 
     <!-- Card content menu -->

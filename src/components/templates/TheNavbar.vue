@@ -2,48 +2,9 @@
   <nav class="mb-[16px] w-full text-white">
 
     <!-- Sidebar in Mobile -->
-    <div v-if="showSidebar" class="xl:hidden z-50 fixed w-full md:w-1/2 h-full top-0 left-0 bg-base-dark">
-        <section class="px-4 mb-7  h-[90px] flex items-center border-b border-white/10">
-          <img @click="toggleSidebar" src="/icons/close.svg" class="xl:hidden" alt="close-icon">
-
-          <div class="mx-auto flex items-center justify-center space-x-3">
-            <div class="w-[38px] h-[38px] rounded-full bg-gradient-to-r from-blue to-purple flex justify-center items-center border-2 border-blue">
-              <img src="/icons/logo.svg" alt="logo-icon" />
-            </div>
-            <h1 class="text-lg font-semibold bg-gradient-to-r from-blue to-purple text-transparent bg-clip-text">Cuanmakers</h1>
-          </div>
-        </section>
-        <section class="px-4">
-          <div class="mb-12 w-full h-[56px] pl-12 rounded-12 bg-base transition-all bg-ethereum flex items-center">
-            <span class="text-sm">543,694,489 ETH</span>
-          </div>
-          <div class="flex flex-col space-y-10">
-            <div class="p-2 flex items-center space-x-10">
-              <img src="/icons/discover.svg" alt="discover-icons">
-              <span>Dashboard</span>
-            </div>
-            <div class="p-2 flex items-center space-x-10">
-              <img src="/icons/transfer.svg" alt="discover-icons">
-              <span>Activity</span>
-            </div>
-            <div class="p-2 flex items-center space-x-10">
-              <img src="/icons/note.svg" alt="discover-icons">
-              <span>Transaction</span>
-            </div>
-            <div class="p-2 flex items-center space-x-10">
-              <img src="/icons/bookmark.svg" alt="discover-icons">
-              <span>My Collection</span>
-            </div>
-            <div class="p-2 flex items-center space-x-10">
-              <img src="/icons/setting.svg" alt="discover-icons">
-              <span>Setting</span>
-            </div>
-          </div>
-        </section>
-    </div>
+    <TheSidebarMobile v-if="showSidebar" />
 
     <div class="h-[90px] flex items-center space-x-5 xl:-ml-5">
-
       <div class="w-6/12 lg:w-9/12 flex items-center space-x-5">
 
         <!-- Hamburger Menu -->
@@ -76,13 +37,19 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+
 export default {
   setup() {
-    const showSidebar = ref(false);
+    const store = useStore();
 
+    const showSidebar = computed(() => {
+      return store.state.showSidebar
+    })
+    
     const toggleSidebar = () => {
-      showSidebar.value = !showSidebar.value
+      store.commit('TOGGLE_SIDEBAR')
     }
 
     return {

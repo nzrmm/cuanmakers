@@ -3,7 +3,7 @@
     <div class="h-[144px] sm:h-[200px] lg:h-[320px] px-3 sm:px-6 lg:px-10 flex flex-col justify-center bg-illustration">
 
       <!-- Title Hero -->
-      <h1 class="mb-2 lg:mb-4 xl:mb-8 sm:text-xl lg:text-[40px] font-semibold">One Stop NFT Marketplace</h1>
+      <h1 class="mb-2 lg:mb-8 sm:text-xl lg:text-[40px] font-semibold">One Stop NFT Marketplace</h1>
 
       <!-- Description Hero -->
       <div class="mb-5 lg:mb-6">
@@ -13,8 +13,8 @@
 
       <!-- Link menu hero -->
       <div class="flex space-x-1 sm:space-x-2 lg:space-x-4">
-        <LinkHero>Start Create</LinkHero>
-        <LinkHero>How It Work</LinkHero>
+        <ButtonHero>Start Create</ButtonHero>
+        <ButtonHero>How It Work</ButtonHero>
       </div>
           
     </div>

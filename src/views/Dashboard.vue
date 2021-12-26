@@ -1,6 +1,6 @@
 <template>
   <div class="block lg:flex">
-    <TheSidebarMenu />
+    <TheSidebar />
 
     <div class="pb-12 w-full xl:w-11/12 container">
       <TheNavbar />
